@@ -34,7 +34,7 @@ dev = [
 packages = ["lead_gender"]
 
 [tool.setuptools.package-dir]
-"" = "lead_gender"
+"" = "."
 
 [tool.black]
 line-length = 88

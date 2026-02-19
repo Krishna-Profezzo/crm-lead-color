@@ -1,0 +1,12 @@
+include README.md
+include requirements.txt
+include pyproject.toml
+include setup.py
+
+recursive-include lead_gender *.py
+recursive-include lead_gender *.json
+recursive-include lead_gender *.js
+recursive-include lead_gender *.css
+recursive-include lead_gender *.html
+recursive-include lead_gender *.txt
+recursive-include lead_gender *.md
