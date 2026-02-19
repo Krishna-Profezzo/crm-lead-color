@@ -41,6 +41,23 @@ To contribute to this app:
 3. Make your changes
 4. Submit a pull request
 
+## Pushing to GitHub
+
+To push this app to GitHub:
+
+1. Generate a GitHub personal access token with `repo` scope
+2. Run the push script:
+   ```bash
+   ./push_to_github.sh
+   ```
+3. Enter your token when prompted
+
+Alternatively, you can push manually:
+```bash
+git remote add origin https://github.com/Krishna-Profezzo/crm-lead-color.git
+git push -u origin main
+```
+
 ## License
 
 MIT
