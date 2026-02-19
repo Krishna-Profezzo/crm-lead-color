@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead_gender"
+version = "1.0.0"
+description = "Frappe v15 app that adds gender field to Lead with color-coded status pills"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "OpenHands", email = "openhands@all-hands.dev"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "frappe>=15.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "black",
+    "flake8",
+]
+
+[tool.setuptools]
+packages = ["lead_gender"]
+
+[tool.setuptools.package-dir]
+"" = "lead_gender"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
